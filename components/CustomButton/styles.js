@@ -2,27 +2,47 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   button: {
-    paddingVertical: 12,
-    paddingHorizontal: 20,
+    minHeight: 42,
+    paddingVertical: 10,
+    paddingHorizontal: 16,
     borderRadius: 8,
     alignItems: 'center',
-    marginVertical: 6,
+    justifyContent: 'center',
+    marginVertical: 5,
     width: '100%',
   },
   primary: {
-    backgroundColor: '#0056b3',
+    backgroundColor: '#18181b',
+    borderWidth: 1,
+    borderColor: '#18181b',
   },
   secondary: {
-    backgroundColor: '#e2e8f0',
+    backgroundColor: '#f4f4f5',
+    borderWidth: 1,
+    borderColor: '#e4e4e7',
+  },
+  outline: {
+    backgroundColor: '#ffffff',
+    borderWidth: 1,
+    borderColor: '#e4e4e7',
+  },
+  destructive: {
+    backgroundColor: '#fef2f2',
+    borderWidth: 1,
+    borderColor: '#fecaca',
   },
   text: {
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: '600',
+    letterSpacing: 0.1,
   },
   textPrimary: {
-    color: '#ffffff',
+    color: '#fafafa',
   },
   textSecondary: {
-    color: '#333333',
+    color: '#18181b',
+  },
+  textDestructive: {
+    color: '#dc2626',
   },
 });

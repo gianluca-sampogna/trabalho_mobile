@@ -6,12 +6,12 @@ const LanguageContext = createContext();
 export const LanguageProvider = ({ children }) => {
   const [locale, setLocale] = useState('pt');
 
-  const t = (key) => {
-    return translations[locale][key] || key;
+  const i18n = (key) => {
+    return translations[locale]?.[key] || key;
   };
 
   return (
-    <LanguageContext.Provider value={{ locale, setLocale, t }}>
+    <LanguageContext.Provider value={{ locale, setLocale, i18n, t: i18n }}>
       {children}
     </LanguageContext.Provider>
   );
